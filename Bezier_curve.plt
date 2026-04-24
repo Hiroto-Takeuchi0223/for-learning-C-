@@ -1,0 +1,1 @@
+plot "Bezier_carve" using 1:2 with lines title "Bezier curve"
