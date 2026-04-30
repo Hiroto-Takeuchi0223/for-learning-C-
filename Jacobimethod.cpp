@@ -8,7 +8,7 @@ using Vec = std::vector<double>;
 using Mat = std::vector<std::vector<double>>;
 
 Vec jacobiSolver(const Mat &A, const Vec &b, const Vec &x0, double tol, int maxIter){
-    int n = (int)A.size();
+    int n = (int)A.size(); //(int) change the type of A.size() to int
     Vec x = x0;
     Vec xnew(n, 0.0);
 
