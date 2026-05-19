@@ -14,7 +14,7 @@ Vec jacobiSolver(const Mat &A, const Vec &b, const Vec &x0, double tol, int maxI
 
     for (int iter = 0; iter < maxIter; ++iter){
         for (int i = 0; i < n; ++i){
-            double diag = A[i][i];
+            double diag = A[i][i]; // Diagonal element
             if (std::abs(diag) < std::numeric_limits<double>::epsilon()){
                 throw std::runtime_error("Zero diagonal element encountered in Jacobi method");
             }
